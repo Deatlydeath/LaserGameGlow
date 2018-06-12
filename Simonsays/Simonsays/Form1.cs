@@ -22,6 +22,8 @@ namespace Simonsays
         List<int> pattern = new List<int>(); //
         Random rand = new Random(); //de random knop die er wordt opgelicht wordt
         bool playingBack = false;
+
+        //De nummers stellen tonen voor, Uit deze liedjes kan aan het begin van het spel gekozen worden. Na het liedje is het spel af.
         int[] lied1 = { 0, 1, 2 };
         int[] lied2 = { 5, 3, 2, 2, 5, 3, 2 };
         int[] lied3 = { 4, 4, 5, 4, 5, 1, 3, 2, 2, 3, 5, 4 };
@@ -68,6 +70,7 @@ namespace Simonsays
                     int aLength = array.Length;
                     if (pattern.Count >= aLength)
                     {
+                        //Je krijgt een message wanneer de reeks goed uitgevoerd is
                         MessageBox.Show("You won!");
                         pattern.Clear();
                         onInList = 0;

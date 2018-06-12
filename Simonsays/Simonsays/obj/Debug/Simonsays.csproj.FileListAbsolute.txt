@@ -17,3 +17,12 @@ D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\Simonsays\obj\Debug\S
 D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\Simonsays\obj\Debug\Simonsays.Form1.resources
 D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\Simonsays\obj\Debug\Simonsays.Properties.Resources.resources
 D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\Simonsays\obj\Debug\Simonsays.csproj.GenerateResource.Cache
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\bin\Debug\Simonsays.exe.config
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\bin\Debug\Simonsays.exe
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\bin\Debug\Simonsays.pdb
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\obj\Debug\Simonsays.csprojResolveAssemblyReference.cache
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\obj\Debug\Simonsays.Form1.resources
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\obj\Debug\Simonsays.Properties.Resources.resources
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\obj\Debug\Simonsays.csproj.GenerateResource.Cache
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\obj\Debug\Simonsays.exe
+D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\obj\Debug\Simonsays.pdb
