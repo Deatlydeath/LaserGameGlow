@@ -16,13 +16,13 @@ namespace Simonsays
         public Form1()
         {
             InitializeComponent();
-
+            serialPort1.Open();
 
 
         }
 
         int onInList = 0;
-        List<int> pattern = new List<int>(); 
+        List<int> pattern = new List<int>();    
         Random rand = new Random(); //de random knop die er wordt opgelicht wordt
         bool playingBack = false;
 
@@ -271,6 +271,11 @@ namespace Simonsays
             array = lied3;
             pattern.Add(array[i]); //voeg de eerste toon van het nummer toe
             new Thread(playback).Start();
+        }
+
+        private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
+        {
+
         }
     }
 }
