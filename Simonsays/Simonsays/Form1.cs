@@ -16,10 +16,13 @@ namespace Simonsays
         public Form1()
         {
             InitializeComponent();
+
+
+
         }
 
         int onInList = 0;
-        List<int> pattern = new List<int>(); //
+        List<int> pattern = new List<int>(); 
         Random rand = new Random(); //de random knop die er wordt opgelicht wordt
         bool playingBack = false;
 
@@ -30,31 +33,121 @@ namespace Simonsays
         int i;
         int[] array;
 
+
+
+
+
         // BUTTONS TESTCORRECT BUTTONS TESTCORRECT BUTTONS TESTCORRECT //
 
         private void Red_Click(object sender, EventArgs e)
         {
-            testCorrect(0);
+            if (pattern.Count == 0)
+            {
+
+                Red.BackColor = Color.Red;
+                Application.DoEvents();
+                Thread.Sleep(500);
+                Red.BackColor = Color.Transparent;
+
+            }
+            else
+            {
+                testCorrect(0);
+            }
             //als deze knop ingedrukt word geeft hij een een 0 door aan de functie testCorrect
         }
 
         private void Blue_Click(object sender, EventArgs e)
         {
-            testCorrect(1);
+            if (pattern.Count == 0)
+            {
+
+                Blue.BackColor = Color.Blue;
+                Application.DoEvents();
+                Thread.Sleep(500);
+                Blue.BackColor = Color.Transparent;
+
+            }
+            else
+            {
+                testCorrect(1);
+            }
             //als deze knop ingedrukt word geeft hij een een 1 door aan de functie testCorrect
         }
 
         private void Yellow_Click(object sender, EventArgs e)
         {
-            testCorrect(2);
+            if (pattern.Count == 0)
+            {
+
+                Yellow.BackColor = Color.Yellow;
+                Application.DoEvents();
+                Thread.Sleep(500);
+                Yellow.BackColor = Color.Transparent;
+
+            }
+            else
+            {
+                testCorrect(2);
+            }
             //als deze knop ingedrukt word geeft hij een een 2 door aan de functie testCorrect
         }
 
         private void Green_Click(object sender, EventArgs e)
         {
-            testCorrect(3);
+            if (pattern.Count == 0)
+            {
+
+                Green.BackColor = Color.Green;
+                Application.DoEvents();
+                Thread.Sleep(500);
+                Green.BackColor = Color.Transparent;
+
+            }
+            else
+            {
+                testCorrect(3);
+            }
             //als deze knop ingedrukt word geeft hij een een 3 door aan de functie testCorrect
         }
+
+        private void Purple_Click(object sender, EventArgs e)
+        {
+            if (pattern.Count == 0)
+            {
+
+                Purple.BackColor = Color.Purple;
+                Application.DoEvents();
+                Thread.Sleep(500);
+                Purple.BackColor = Color.Transparent;
+
+            }
+            else
+            {
+                testCorrect(4);
+            }
+            //als deze knop ingedrukt word geeft hij een een 4 door aan de functie testCorrect
+        }
+
+        private void Pink_Click(object sender, EventArgs e)
+        {
+            if (pattern.Count == 0)
+            {
+
+                Pink.BackColor = Color.Pink;
+                Application.DoEvents();
+                Thread.Sleep(500);
+                Pink.BackColor = Color.Transparent;
+
+            }
+            else
+            {
+                testCorrect(5);
+            }
+            //als deze knop ingedrukt word geeft hij een een 5 door aan de functie testCorrect
+        }
+
+
 
         void testCorrect(int color)
         {
@@ -96,6 +189,8 @@ namespace Simonsays
             scorelabel.Text = ("Score: " + pattern.Count.ToString()); //laat de huidige score zien
             patternlabel.Text = ("Item within pattern: " + onInList.ToString()); //laat de huidige items in de reeks zien
         }
+
+
 
         void playback() //deze functie gebeurt als de computer de reeks laat zien die nagespeeld moet worden
         {
@@ -148,23 +243,15 @@ namespace Simonsays
 
         }
 
-        private void Purple_Click(object sender, EventArgs e)
-        {
-            testCorrect(4);
-            //als deze knop ingedrukt word geeft hij een een 4 door aan de functie testCorrect
-        }
 
-        private void Pink_Click(object sender, EventArgs e)
-        {
-            testCorrect(5);
-            //als deze knop ingedrukt word geeft hij een een 5 door aan de functie testCorrect
-        }
 
         private void patternlabel_Click(object sender, EventArgs e)
         {
 
         }
 
+
+        //kiezen van liedjes
         private void button1_Click(object sender, EventArgs e)
         {
             array = lied1;
@@ -175,11 +262,15 @@ namespace Simonsays
         private void button2_Click(object sender, EventArgs e)
         {
             array = lied2;
+            pattern.Add(array[i]); //voeg de eerste toon van het nummer toe
+            new Thread(playback).Start();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             array = lied3;
+            pattern.Add(array[i]); //voeg de eerste toon van het nummer toe
+            new Thread(playback).Start();
         }
     }
 }
