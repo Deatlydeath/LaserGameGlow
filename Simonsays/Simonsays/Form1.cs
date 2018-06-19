@@ -16,7 +16,7 @@ namespace Simonsays
         public Form1()
         {
             InitializeComponent();
-            serialPort1.Open();
+            //serialPort1.Open();
 
 
         }
@@ -27,7 +27,7 @@ namespace Simonsays
         bool playingBack = false;
 
         //De nummers stellen tonen voor, Uit deze liedjes kan aan het begin van het spel gekozen worden. Na het liedje is het spel af.
-        int[] lied1 = { 0, 1, 2 };
+        int[] lied1 = { 0, 1 };
         int[] lied2 = { 5, 3, 2, 2, 5, 3, 2 };
         int[] lied3 = { 4, 4, 5, 4, 5, 1, 3, 2, 2, 3, 5, 4 };
         int i;
