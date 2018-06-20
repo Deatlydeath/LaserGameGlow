@@ -17,8 +17,6 @@ namespace Simonsays
         {
             InitializeComponent();
             //serialPort1.Open();
-
-
         }
 
         int onInList = 0;
@@ -33,6 +31,42 @@ namespace Simonsays
         int i;
         int[] array;
 
+        private void playSimpleSound0()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\C.wav");
+            simpleSound.Play();
+        }
+
+        private void playSimpleSound1()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\D.wav");
+            simpleSound.Play();
+        }
+
+        private void playSimpleSound2()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\E.wav");
+            simpleSound.Play();
+        }
+
+        private void playSimpleSound3()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\F.wav");
+            simpleSound.Play();
+        }
+
+        private void playSimpleSound4()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\G.wav");
+            simpleSound.Play();
+        }
+
+        private void playSimpleSound5()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\A.wav");
+            simpleSound.Play();
+        }
+
 
 
 
@@ -43,12 +77,11 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-
+                playSimpleSound0();
                 Red.BackColor = Color.Red;
                 Application.DoEvents();
                 Thread.Sleep(500);
                 Red.BackColor = Color.Transparent;
-
             }
             else
             {
@@ -61,12 +94,11 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-
+                playSimpleSound1();
                 Blue.BackColor = Color.Blue;
                 Application.DoEvents();
                 Thread.Sleep(500);
                 Blue.BackColor = Color.Transparent;
-
             }
             else
             {
@@ -79,12 +111,11 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-
+                playSimpleSound2();
                 Yellow.BackColor = Color.Yellow;
                 Application.DoEvents();
                 Thread.Sleep(500);
                 Yellow.BackColor = Color.Transparent;
-
             }
             else
             {
@@ -97,12 +128,11 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-
+                playSimpleSound3();
                 Green.BackColor = Color.Green;
                 Application.DoEvents();
                 Thread.Sleep(500);
                 Green.BackColor = Color.Transparent;
-
             }
             else
             {
@@ -115,12 +145,11 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-
+                playSimpleSound4();
                 Purple.BackColor = Color.Purple;
                 Application.DoEvents();
                 Thread.Sleep(500);
                 Purple.BackColor = Color.Transparent;
-
             }
             else
             {
@@ -133,12 +162,11 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-
+                playSimpleSound5();
                 Pink.BackColor = Color.Pink;
                 Application.DoEvents();
                 Thread.Sleep(500);
                 Pink.BackColor = Color.Transparent;
-
             }
             else
             {
@@ -199,36 +227,42 @@ namespace Simonsays
                 switch (color)
                 {
                     case 0: //knop 1
+                        playSimpleSound0();
                         Red.BackColor = Color.Red;
                         Thread.Sleep(500);
                         Red.BackColor = Color.Transparent;
                         break;
 
                     case 1: //knop 2
+                        playSimpleSound1();
                         Blue.BackColor = Color.Blue;
                         Thread.Sleep(500);
                         Blue.BackColor = Color.Transparent;
                         break;
 
                     case 2: //knop 3
+                        playSimpleSound2();
                         Yellow.BackColor = Color.Yellow;
                         Thread.Sleep(500);
                         Yellow.BackColor = Color.Transparent;
                         break;
 
                     case 3: //knop 4
+                        playSimpleSound3();
                         Green.BackColor = Color.Green;
                         Thread.Sleep(500);
                         Green.BackColor = Color.Transparent;
                         break;
 
                     case 4: //knop 5
+                        playSimpleSound4();
                         Purple.BackColor = Color.Purple;
                         Thread.Sleep(500);
                         Purple.BackColor = Color.Transparent;
                         break;
 
                     case 5: //knop 6
+                        playSimpleSound5();
                         Pink.BackColor = Color.Pink;
                         Thread.Sleep(500);
                         Pink.BackColor = Color.Transparent;
