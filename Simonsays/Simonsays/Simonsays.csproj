@@ -80,22 +80,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\68437__pinkyfinger__piano-a.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\68438__pinkyfinger__piano-b.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\68440__pinkyfinger__piano-c.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\68442__pinkyfinger__piano-d.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\68443__pinkyfinger__piano-e.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\68446__pinkyfinger__piano-f.wav" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

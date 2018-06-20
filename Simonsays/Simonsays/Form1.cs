@@ -25,7 +25,7 @@ namespace Simonsays
         bool playingBack = false;
 
         //De nummers stellen tonen voor, Uit deze liedjes kan aan het begin van het spel gekozen worden. Na het liedje is het spel af.
-        int[] lied1 = { 0, 1 };
+        int[] lied1 = { 1, 2, 3, 1, 1, 2, 3, 1 };
         int[] lied2 = { 5, 3, 2, 2, 5, 3, 2 };
         int[] lied3 = { 4, 4, 5, 4, 5, 1, 3, 2, 2, 3, 5, 4 };
         int i;
@@ -33,37 +33,37 @@ namespace Simonsays
 
         private void playSimpleSound0()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\C.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\C.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound1()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\D.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\D.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound2()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\E.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\E.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound3()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\F.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\F.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound4()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\G.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\G.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound5()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\A.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\A.wav");
             simpleSound.Play();
         }
 
@@ -85,6 +85,7 @@ namespace Simonsays
             }
             else
             {
+                playSimpleSound0();
                 testCorrect(0);
             }
             //als deze knop ingedrukt word geeft hij een een 0 door aan de functie testCorrect
@@ -102,6 +103,7 @@ namespace Simonsays
             }
             else
             {
+                playSimpleSound1();
                 testCorrect(1);
             }
             //als deze knop ingedrukt word geeft hij een een 1 door aan de functie testCorrect
@@ -119,6 +121,7 @@ namespace Simonsays
             }
             else
             {
+                playSimpleSound2();
                 testCorrect(2);
             }
             //als deze knop ingedrukt word geeft hij een een 2 door aan de functie testCorrect
@@ -136,6 +139,7 @@ namespace Simonsays
             }
             else
             {
+                playSimpleSound3();
                 testCorrect(3);
             }
             //als deze knop ingedrukt word geeft hij een een 3 door aan de functie testCorrect
@@ -153,6 +157,7 @@ namespace Simonsays
             }
             else
             {
+                playSimpleSound4();
                 testCorrect(4);
             }
             //als deze knop ingedrukt word geeft hij een een 4 door aan de functie testCorrect
@@ -170,6 +175,7 @@ namespace Simonsays
             }
             else
             {
+                playSimpleSound5();
                 testCorrect(5);
             }
             //als deze knop ingedrukt word geeft hij een een 5 door aan de functie testCorrect
@@ -202,6 +208,7 @@ namespace Simonsays
                         i++;
                         pattern.Add(array[i]);
                         onInList = 0;
+                        Thread.Sleep(1000);
                         new Thread(playback).Start();
                     }
                 }
