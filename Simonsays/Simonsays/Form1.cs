@@ -25,7 +25,7 @@ namespace Simonsays
         bool playingBack = false;
 
         //De nummers stellen tonen voor, Uit deze liedjes kan aan het begin van het spel gekozen worden. Na het liedje is het spel af.
-        int[] lied1 = { 0, 1 };
+        int[] lied1 = { 1, 2, 3, 1, 1, 2, 3, 1 };
         int[] lied2 = { 5, 3, 2, 2, 5, 3, 2 };
         int[] lied3 = { 4, 4, 5, 4, 5, 1, 3, 2, 2, 3, 5, 4 };
         int i;
@@ -33,37 +33,37 @@ namespace Simonsays
 
         private void playSimpleSound0()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\C.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\Resources\C.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound1()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\D.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\Resources\D.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound2()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\E.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\Resources\E.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound3()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\F.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\Resources\F.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound4()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\G.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\Resources\G.wav");
             simpleSound.Play();
         }
 
         private void playSimpleSound5()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\sounds\A.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\ICT\ICT\Semester 3\Media\PTM\LaserGameGlow\Simonsays\Simonsays\Resources\A.wav");
             simpleSound.Play();
         }
 
