@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
+
 namespace Simonsays
 {
     public partial class Form1 : Form
@@ -31,44 +33,11 @@ namespace Simonsays
         int i;
         int[] array;
 
-        private void playSimpleSound0()
+        private void playSimpleSound(UnmanagedMemoryStream resource)
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\C.wav");
+            SoundPlayer simpleSound = new SoundPlayer(resource);
             simpleSound.Play();
         }
-
-        private void playSimpleSound1()
-        {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\D.wav");
-            simpleSound.Play();
-        }
-
-        private void playSimpleSound2()
-        {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\E.wav");
-            simpleSound.Play();
-        }
-
-        private void playSimpleSound3()
-        {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\F.wav");
-            simpleSound.Play();
-        }
-
-        private void playSimpleSound4()
-        {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\G.wav");
-            simpleSound.Play();
-        }
-
-        private void playSimpleSound5()
-        {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\School\M\Jaar 2\S3\Proftaak\DedRubrics-master\Simonsays\sounds\A.wav");
-            simpleSound.Play();
-        }
-
-
-
 
 
         // BUTTONS TESTCORRECT BUTTONS TESTCORRECT BUTTONS TESTCORRECT //
@@ -77,7 +46,7 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-                playSimpleSound0();
+                playSimpleSound(Properties.Resources.C);
                 Red.BackColor = Color.Red;
                 Application.DoEvents();
                 Thread.Sleep(500);
@@ -85,7 +54,7 @@ namespace Simonsays
             }
             else
             {
-                playSimpleSound0();
+                playSimpleSound(Properties.Resources.C);
                 testCorrect(0);
             }
             //als deze knop ingedrukt word geeft hij een een 0 door aan de functie testCorrect
@@ -95,7 +64,7 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-                playSimpleSound1();
+                playSimpleSound(Properties.Resources.D);
                 Blue.BackColor = Color.Blue;
                 Application.DoEvents();
                 Thread.Sleep(500);
@@ -103,7 +72,7 @@ namespace Simonsays
             }
             else
             {
-                playSimpleSound1();
+                playSimpleSound(Properties.Resources.D);
                 testCorrect(1);
             }
             //als deze knop ingedrukt word geeft hij een een 1 door aan de functie testCorrect
@@ -113,7 +82,7 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-                playSimpleSound2();
+                playSimpleSound(Properties.Resources.E);
                 Yellow.BackColor = Color.Yellow;
                 Application.DoEvents();
                 Thread.Sleep(500);
@@ -121,7 +90,7 @@ namespace Simonsays
             }
             else
             {
-                playSimpleSound2();
+                playSimpleSound(Properties.Resources.E);
                 testCorrect(2);
             }
             //als deze knop ingedrukt word geeft hij een een 2 door aan de functie testCorrect
@@ -131,7 +100,7 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-                playSimpleSound3();
+                playSimpleSound(Properties.Resources.F);
                 Green.BackColor = Color.Green;
                 Application.DoEvents();
                 Thread.Sleep(500);
@@ -139,7 +108,7 @@ namespace Simonsays
             }
             else
             {
-                playSimpleSound3();
+                playSimpleSound(Properties.Resources.F);
                 testCorrect(3);
             }
             //als deze knop ingedrukt word geeft hij een een 3 door aan de functie testCorrect
@@ -149,7 +118,7 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-                playSimpleSound4();
+                playSimpleSound(Properties.Resources.G);
                 Purple.BackColor = Color.Purple;
                 Application.DoEvents();
                 Thread.Sleep(500);
@@ -157,7 +126,7 @@ namespace Simonsays
             }
             else
             {
-                playSimpleSound4();
+                playSimpleSound(Properties.Resources.G);
                 testCorrect(4);
             }
             //als deze knop ingedrukt word geeft hij een een 4 door aan de functie testCorrect
@@ -167,7 +136,7 @@ namespace Simonsays
         {
             if (pattern.Count == 0)
             {
-                playSimpleSound5();
+                playSimpleSound(Properties.Resources.A);
                 Pink.BackColor = Color.Pink;
                 Application.DoEvents();
                 Thread.Sleep(500);
@@ -175,7 +144,7 @@ namespace Simonsays
             }
             else
             {
-                playSimpleSound5();
+                playSimpleSound(Properties.Resources.A);
                 testCorrect(5);
             }
             //als deze knop ingedrukt word geeft hij een een 5 door aan de functie testCorrect
@@ -234,42 +203,42 @@ namespace Simonsays
                 switch (color)
                 {
                     case 0: //knop 1
-                        playSimpleSound0();
+                        playSimpleSound(Properties.Resources.C);
                         Red.BackColor = Color.Red;
                         Thread.Sleep(500);
                         Red.BackColor = Color.Transparent;
                         break;
 
                     case 1: //knop 2
-                        playSimpleSound1();
+                        playSimpleSound(Properties.Resources.D);
                         Blue.BackColor = Color.Blue;
                         Thread.Sleep(500);
                         Blue.BackColor = Color.Transparent;
                         break;
 
                     case 2: //knop 3
-                        playSimpleSound2();
+                        playSimpleSound(Properties.Resources.E);
                         Yellow.BackColor = Color.Yellow;
                         Thread.Sleep(500);
                         Yellow.BackColor = Color.Transparent;
                         break;
 
                     case 3: //knop 4
-                        playSimpleSound3();
+                        playSimpleSound(Properties.Resources.F);
                         Green.BackColor = Color.Green;
                         Thread.Sleep(500);
                         Green.BackColor = Color.Transparent;
                         break;
 
                     case 4: //knop 5
-                        playSimpleSound4();
+                        playSimpleSound(Properties.Resources.G);
                         Purple.BackColor = Color.Purple;
                         Thread.Sleep(500);
                         Purple.BackColor = Color.Transparent;
                         break;
 
                     case 5: //knop 6
-                        playSimpleSound5();
+                        playSimpleSound(Properties.Resources.A);
                         Pink.BackColor = Color.Pink;
                         Thread.Sleep(500);
                         Pink.BackColor = Color.Transparent;

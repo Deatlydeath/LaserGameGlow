@@ -57,7 +57,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -79,8 +79,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\A.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
